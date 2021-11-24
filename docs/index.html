@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="./favicon.png" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#3a3434" />
+    <meta name="description" content="Gastly page" />
+    <link rel="apple-touch-icon" href="./favicon.png" />
+    <link rel="manifest" href="./manifest.json" />
+    <title>Gastly</title>
+    <link href="./static/css/main.f9a5c235.chunk.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <div class="perspective-container">
+      <div class="container">
+        <div class="pokemon-container">
+          <div class="eyes-container">
+            <div class="left eye-container"><div class="eye-inner"></div></div>
+            <div class="right eye-container"><div class="eye-inner"></div></div>
+          </div>
+          <div class="brows-container">
+            <div class="left brow"></div>
+            <div class="right brow"></div>
+          </div>
+          <div class="gastly-container">
+            <div class="gastly">
+              <div class="gastly-shadow">
+                <div class="mouth-container"><div class="mouth"></div></div>
+                <div class="fang-container">
+                  <div class="left fang"></div>
+                  <div class="right fang"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <svg
+          class="gastly-shape"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 60 55"
+        >
+          <defs>
+            <linearGradient id="grandient" x1="0" x2="0" y1="0" y2="1">
+              <stop offset="0%" stop-color="#c2afcd" />
+              <stop offset="50%" stop-color="#c2afcd" />
+              <stop offset="50%" stop-color="#71616e" />
+              <stop offset="100%" stop-color="#71616e" />
+            </linearGradient>
+            <clipPath id="clip"><use xlink:href="#inner-shape" /></clipPath>
+          </defs>
+          <g id="shape-group">
+            <path
+              id="inner-shape"
+              d=" M38.1 52.4v-4.8l2.6-2.2 1.1 1.2 1.7-1.8v-2.7h3.3v-1.4h2l1.5-3.5-1.4-1.3v-2.7l2-1.3v-2.3h-2.4l-.8
+          2h-1l-1.1-1.7v-2.7l1.2-1v-1.9l3-2.9-2.3-3.8h-1.8V16h3.2V13l-2.2-1.9-1.1.6-1-1-2.1 1.5v2.2l1 1v1.3l-1.2 1.2-3-3
+          1.4-3.2-3.4-3.4h-4l-.7 2-3 1.7-3.2-1.6V8l3.2-1.5V3.6l-2.5-2.1h-4.7l-2.2 2v2l-4.3 2.3v3h-4.6l-2.3
+          5H6.7v4.5h3v3.2H7.9l-1.8 3v2.8h2.3v2.5h-3l-1 3.8 3.3 5.7h3.6l1.4 2.3-1.3.8 1.3 3.5H17v3.7h4.9l3.3-3h3.5l1
+          2.3h3l1.5 1.6z"
+            />
+            <path
+              d="M5.4 11.2h1.8v2H5.4zM7.9 7.4h2.2v2.4H7.9zM52.3 30.5h3.1v3.4h-3.1zM40.3 50.1h2.8v3h-2.8z"
+            />
+            <path
+              d="M32 1.5h1.7l1.2 1.1h1.8l1.4-1.4 1.6 1.4L38 4.4h-1.6l-1 1.1h-1.1l-2.3-2.2z"
+            />
+          </g>
+          <g clip-path="url(#clip)">
+            <use class="shape-2" xlink:href="#inner-shape" />
+          </g>
+        </svg>
+      </div>
+    </div>
+    <div class="background">
+      <div class="polygon"></div>
+      <div class="triangle triangle-1"></div>
+      <div class="triangle triangle-2"></div>
+      <div class="triangle triangle-3"></div>
+      <div class="triangle triangle-4"></div>
+    </div>
+    <script>
+      !(function (e) {
+        function t(t) {
+          for (
+            var n, a, i = t[0], c = t[1], l = t[2], s = 0, p = [];
+            s < i.length;
+            s++
+          )
+            (a = i[s]),
+              Object.prototype.hasOwnProperty.call(o, a) &&
+                o[a] &&
+                p.push(o[a][0]),
+              (o[a] = 0);
+          for (n in c)
+            Object.prototype.hasOwnProperty.call(c, n) && (e[n] = c[n]);
+          for (f && f(t); p.length; ) p.shift()();
+          return u.push.apply(u, l || []), r();
+        }
+        function r() {
+          for (var e, t = 0; t < u.length; t++) {
+            for (var r = u[t], n = !0, i = 1; i < r.length; i++) {
+              var c = r[i];
+              0 !== o[c] && (n = !1);
+            }
+            n && (u.splice(t--, 1), (e = a((a.s = r[0]))));
+          }
+          return e;
+        }
+        var n = {},
+          o = { 1: 0 },
+          u = [];
+        function a(t) {
+          if (n[t]) return n[t].exports;
+          var r = (n[t] = { i: t, l: !1, exports: {} });
+          return e[t].call(r.exports, r, r.exports, a), (r.l = !0), r.exports;
+        }
+        (a.e = function (e) {
+          var t = [],
+            r = o[e];
+          if (0 !== r)
+            if (r) t.push(r[2]);
+            else {
+              var n = new Promise(function (t, n) {
+                r = o[e] = [t, n];
+              });
+              t.push((r[2] = n));
+              var u,
+                i = document.createElement("script");
+              (i.charset = "utf-8"),
+                (i.timeout = 120),
+                a.nc && i.setAttribute("nonce", a.nc),
+                (i.src = (function (e) {
+                  return (
+                    a.p +
+                    "static/js/" +
+                    ({}[e] || e) +
+                    "." +
+                    { 3: "72f01efc" }[e] +
+                    ".chunk.js"
+                  );
+                })(e));
+              var c = new Error();
+              u = function (t) {
+                (i.onerror = i.onload = null), clearTimeout(l);
+                var r = o[e];
+                if (0 !== r) {
+                  if (r) {
+                    var n = t && ("load" === t.type ? "missing" : t.type),
+                      u = t && t.target && t.target.src;
+                    (c.message =
+                      "Loading chunk " +
+                      e +
+                      " failed.\n(" +
+                      n +
+                      ": " +
+                      u +
+                      ")"),
+                      (c.name = "ChunkLoadError"),
+                      (c.type = n),
+                      (c.request = u),
+                      r[1](c);
+                  }
+                  o[e] = void 0;
+                }
+              };
+              var l = setTimeout(function () {
+                u({ type: "timeout", target: i });
+              }, 12e4);
+              (i.onerror = i.onload = u), document.head.appendChild(i);
+            }
+          return Promise.all(t);
+        }),
+          (a.m = e),
+          (a.c = n),
+          (a.d = function (e, t, r) {
+            a.o(e, t) ||
+              Object.defineProperty(e, t, { enumerable: !0, get: r });
+          }),
+          (a.r = function (e) {
+            "undefined" != typeof Symbol &&
+              Symbol.toStringTag &&
+              Object.defineProperty(e, Symbol.toStringTag, { value: "Module" }),
+              Object.defineProperty(e, "__esModule", { value: !0 });
+          }),
+          (a.t = function (e, t) {
+            if ((1 & t && (e = a(e)), 8 & t)) return e;
+            if (4 & t && "object" == typeof e && e && e.__esModule) return e;
+            var r = Object.create(null);
+            if (
+              (a.r(r),
+              Object.defineProperty(r, "default", { enumerable: !0, value: e }),
+              2 & t && "string" != typeof e)
+            )
+              for (var n in e)
+                a.d(
+                  r,
+                  n,
+                  function (t) {
+                    return e[t];
+                  }.bind(null, n)
+                );
+            return r;
+          }),
+          (a.n = function (e) {
+            var t =
+              e && e.__esModule
+                ? function () {
+                    return e.default;
+                  }
+                : function () {
+                    return e;
+                  };
+            return a.d(t, "a", t), t;
+          }),
+          (a.o = function (e, t) {
+            return Object.prototype.hasOwnProperty.call(e, t);
+          }),
+          (a.p = "/"),
+          (a.oe = function (e) {
+            throw (console.error(e), e);
+          });
+        var i = (this.webpackJsonpgastly = this.webpackJsonpgastly || []),
+          c = i.push.bind(i);
+        (i.push = t), (i = i.slice());
+        for (var l = 0; l < i.length; l++) t(i[l]);
+        var f = c;
+        r();
+      })([]);
+    </script>
+    <script src="./static/js/2.629f2cfd.chunk.js"></script>
+    <script src="./static/js/main.4f541c84.chunk.js"></script>
+  </body>
+</html>
